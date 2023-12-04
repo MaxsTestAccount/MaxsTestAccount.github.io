@@ -303,9 +303,21 @@ h2{
     }
 }
 
-.synopsis-col:hover{
+@media(min-width: 701px){
+    .synopsis-col:hover{
     top: -10px;
+    }
 }
+
+@media(max-width: 700px){
+    .synopsis-col{
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
+    }
+    .synopsis-col:hover{
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.9);
+    }
+}
+
 
 
 .gingerbread{
