@@ -70,7 +70,8 @@ nav img{
     font-size: 17px;
     font-weight: 600;
 }
-.nav-links ul li::after{
+@media(min-width: 700px){
+   .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -78,7 +79,10 @@ nav img{
     display: block;
     margin: auto;  
     transition: 0.3s;
+} 
 }
+
+
 .nav-links ul li:hover::after{
     width: 100%
 }
@@ -305,15 +309,14 @@ h2{
 /*-----------footer----------*/
 
 .footer{
-    width: 100%;
+        width: 100%;
         text-align: center;
         padding: 30px 0;
 }
-
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+@media(max-width: 700px){
+    .footer p{
+        font-size: 16px
+    }
 }
 
 
@@ -398,6 +401,12 @@ h2{
     width: 100%;
 }
 
+@media(max-width: 700px){
+    .sub-header-about h1{
+        font-size: 50px;
+        padding-top: 50px
+    }
+}
 
 /*-----------------------------------------------Contact Me---------------------------------------*/
 
@@ -463,6 +472,17 @@ h2{
     font-size: 18px;
 }
 
+
+.contact-col div h6{
+        font-size: 32px;
+        font-weight: 400;
+
+    }
+.contact-col div p2{
+    font-size: 22px;
+}
+
+
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;
@@ -470,9 +490,40 @@ h2{
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    
+
+}
+@media(max-width: 700px){
+    .contact-col div h5 {
+        font-size: 18px; 
+    }
+    .contact-col div p {
+    font-size: 14px; 
+    }
+    
+    .page-title h1.about-title {
+    font-size: 50px; 
+    padding-top: 50px;
+    }
+    .contact-col div h6{
+        font-size: 18px;
+    }
+    .contact-col div p2{
+        font-size: 14px;
+    }
 }
 
+
+
 /*----------------------------------------------------My Thesis-----------------------------------------*/
+
+.mathmode{
+/*    font-family: 'Noto Sans Math', sans-serif;*/
+        font-family: 'Noto Serif', serif;
+        font-weight: 300;
+    
+}
+
 .sub-header-thesis{
     height: 50vh;
     width: 100%;
@@ -493,6 +544,11 @@ h2{
     }
 }
 
+@media(min-width: 701px){
+    .about-title{
+        font-size: 
+    }
+}
 
 /*------------------------------------------------------PIP--------------------------------------------------*/
 
@@ -544,8 +600,20 @@ h2{
     .PIP-col-img{
         width: 35%;
 }
+    .about-title {
+    font-size: 50px; /* You can adjust the font size as needed */
+}
+
+}
 
 
+
+@media(max-width: 700px){
+    .sub-header-PIP h1.about-title {
+        font-size: 50px; /* Adjust the font size as needed */
+        padding-top: 10px;
+    }
+}
 /*----------------------------------------------TEACHING---------------------------------------------*/
 
 .sub-header-teaching{
@@ -557,6 +625,8 @@ h2{
     text-align: center;
     color: #fff;
 }
+
+
 
 
 
