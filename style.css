@@ -42,11 +42,6 @@ nav{
     padding: 12px 34px;
     position: relative;
     text-align: left;
-    border-radius: 50px;
-background: linear-gradient(145deg, #061932, #071e3b);
-box-shadow:  5px 5px 10px #030b16,
-             -5px -5px 10px #0b2d58;
-
 }
 
 @media(max-width: 700px){
@@ -65,7 +60,6 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
-    
 }
 
 .nav-links ul li{
@@ -73,10 +67,6 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    border-radius: 50px;
-background: linear-gradient(145deg, #061932, #071e3b);
-box-shadow:  5px 5px 10px #030b16,
-             -5px -5px 10px #0b2d58;
     
 }
 .nav-links ul li a{
@@ -148,16 +138,12 @@ box-shadow:  5px 5px 10px #030b16,
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 0px solid #fff;
+    border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 22px;
+    font-size: 14px;
     background: transparent;
     position: relative;
     cursor: pointer;
-    border-radius: 50px;
-background: linear-gradient(145deg, #061932, #071e3b);
-box-shadow:  5px 5px 10px #030b16,
-             -5px -5px 10px #0b2d58;
     
 }
 .hero-btn:hover{
@@ -279,7 +265,6 @@ h2{
     display: block;
     margin-right: -20px;
     margin-left: -20px;
-    
 }
 
 .synopsis-col h3{
