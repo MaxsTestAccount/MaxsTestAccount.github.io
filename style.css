@@ -200,6 +200,9 @@ nav .fa{
     padding-top: 100px;
     color: #000;
 }
+
+
+
 h1{
     font-size: 30px;
     font-weight: 600;
@@ -216,6 +219,12 @@ h2{
 }
 
 .row{
+    margin-top: 5%;
+    justify-content: space-between;
+    display:inline-flex;
+}
+
+.row-index{
     margin-top: 5%;
     justify-content: space-between;
     display:inline-flex;
@@ -241,8 +250,8 @@ h2{
     transition: 0.15s;
     color: #fff;
     display: block;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 .synopsis-col h3{
@@ -275,6 +284,10 @@ h2{
     .row{
         display: block;
     }
+    .row-index{
+        display: block;
+    }
+    
     .synopsis-col{
         display: block;
     }
