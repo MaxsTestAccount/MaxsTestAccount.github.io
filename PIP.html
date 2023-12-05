@@ -134,8 +134,19 @@
 </html>
     
     
+<!-----------------------------------JavaScript for On-Scroll Effects---------------------------------------->
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('roll-animation')
+        }
+    })
+});
 
-              
+observer.observe(document.querySelector('.pip-img'));
+
+</script>
                                
                                
                                
