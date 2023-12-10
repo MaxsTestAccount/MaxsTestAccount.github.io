@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-about">
+    <nav>
+        <a href="accueil.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="accueil.html"><i class="fa-solid fa-house"></i>&nbsp; ACCUEIL</a></li>
+                <li><a href="about-fr.html"><i class="fa-solid fa-address-card"></i>&nbsp; À PROPOS DE MOI</a></li>
+                <li><a href="contact-fr.html"><i class="fa-solid fa-envelope"></i>&nbsp; ME CONTACTER</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="about.html">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">À propos de moi</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="teaching">
+    <div class="row-teaching">
+        <div class="teaching-col">
+            <h1>Ce que j'ai à offrir</h1>
+             <p>Je suis titulaire d'une maîtrise en Mathématiques et Statistique de l'université d'Ottawa. Mon parcours académique m'a permis d'acquérir une profonde compréhension des concepts mathématiques avancés et de leurs applications pratiques, ce qui me place de façon unique dans une position pour réussir dans le domaine du développement de logiciels. Ma thèse, "Embedding r-Factorizations of Complete Uniform Hypergraphs into s-Factorizations," démontre mes capacités en résolution de problèmes complexes et en présentation de solutions. J'ai eu le privilège de partager ma recherche au 27e atelier annuel de l'"Ontario Combinatorics Workshop" (Atelier de Combinatoire de l'Ontario,) ce qui a non seulement affiné mes compétences en mathématiques, mais aussi mes capacités à communiquer et de résauter dans la communauté mathématique.</p>
+            
+
+            <p>En tant qu'assistant d'enseignement à l'Université d'Ottawa, j'ai perfectionné ma capacité à présenter des sujets complexes à des personnes avec une haute variance de familiarité avec le sujet. Cette expérience, couplée à mon baccalauréat magna cum laude démontrent mes excellentes compréhensions dans des sujets allant de la combinatoire et les mathématiques discrètes à l'apprentissage automatique et la programmation.</p>
+
+            <p>En plus de mes aptitudes en mathématiques, j'apporte un solide ensemble de compétences dans des langages de programmation tels que Python, R, SQL, Visual Basic, C, MATLAB, HTML et CSS. Mes compétences en conception et en optimisation d'algorithmes, couplées à un excellent raisonnement analytique, font de moi un atout précieux pour les projets de développement de logiciels. Ma langue maternelle est le français, je parle couramment l'anglais, et j'ai une connaissance intermédiaire de l'allemand. Je possède d'excellentes compétences en communication écrite et orale, essentielles pour une collaboration et un travail d'équipe efficaces.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+        </div>
+        <div class="teaching-col">
+            <img src="images/placeholder.png">
+        </div>
+    </div>
+    
+        
+</section>
+    
+  
+    
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Conçu et construit par Maxime Larose</p>
+</section>
+ 
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+               
+                               
+                               

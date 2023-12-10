@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+    
+    
+    
+<section class="header">
+    <nav>
+        <a href="accueil.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="accueil.html"><i class="fa-solid fa-house"></i>&nbsp; ACCUEIL</a></li>
+                <li><a href="about-fr.html"><i class="fa-solid fa-address-card"></i>&nbsp; À PROPOS DE MOI</a></li>
+                <li><a href="contact-fr.html"><i class="fa-solid fa-envelope"></i>&nbsp; ME CONTACTER</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="index.html">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    
+<div class="text-box-fr">
+    <h1>Salut, moi c'est Max!</h1>
+    <p>J'apporte au domaine du développement de logiciels l'expérience et les compétences uniques d'une éducation en mathématiques.</p>
+    <a href="files/CV%20Maxime%20Deschenes-Larose.pdf" class="hero-btn" target="_blank">Mon CV</a>
+</div>
+    
+<!-----------------------------------Squares in Background--------------------------------    -->
+<div class="area">
+    <ul class="circles">
+        <li><i class="fa-solid fa-terminal"></i></li>
+        <li class="mathmode">∈</li>
+        <li><i class="fa-brands fa-css3-alt"></i></li>
+        <li><i class="fa-solid fa-code"></i></li>
+        <li>ℝ</li>
+        <li><i class="fa-brands fa-python"></i></li>
+        <li class="mathmode">π</li>
+        <li class="mathmode">Σ</li>
+        <li>𝑦</li>
+        <li class="mathmode">𝒳</li>
+    </ul>
+</div>
+
+    
+</section>
+
+<!--  ----synopsis------>
+<section class="synopsis">
+    <h1>Je résous des problèmes complexes au moyen du développement de logiciels!</h1>
+    <p>Je suis titulaire d'une maîtrise en Mathématiques et Statistique. Avec un baccalauréat avec mention Magna Cum Laude et de l'expérience en enseignement, ma solide base en mathématiques avancées est complétée par mes compétences en Python, R, LaTeX, SQL, Visual Basic, C, MATLAB, HTML, et CSS. Ma éducation en mathématiques me positionne de façon idéale avec d'excellentes compétences en résolution de problèmes qui font de moi un excellent candidat pour les rôles en développement de logiciels.</p>
+    
+    <h2>Voici quelques-uns de mes projets récents.</h2>
+    <div class="row-index">
+        <a href="Thèse.html" class="synopsis-col">
+            <h3>Ma thèse de maîtrise</h3>
+            <p>Dans ma thèse, "Embedding r-Factorizations of Complete Uniform Hypergraphs into s-Factorizations," je fais des progrès significatifs dans un problème de combinatoire par des moyens théoriques et par le développement de logiciels.</p>
+        </a>
+        <a href="enseignement.html" class="synopsis-col">
+            <h3>Mon enseignement</h3>
+            <p>En tant que membre actif de la communauté académique, j'ai eu le privilège de contribuer au parcours académique des étudiants de premier cycle en fournissant de précieux conseils et en encourageant un environnement d'apprentissage stimulant, tout en tenant à coeur le plus haut standard d'excellence académique.</p>
+        </a>
+        <a href="PIP-fr.html" class="synopsis-col">
+            <h3>PIP</h3>
+            <p>PIP, qui doit son nom au personnage principal du roman Great Expectations de Charles Dickens, est un jeton de cryptomonnaie sociale que j'ai créé pour la blockchain Solana. PIP a été créé pour me familiariser avec le langage de programmation propriétaire de Solana.</p>
+        </a>
+    </div>
+    
+</section>
+    
+  
+    
+<section class="footer">
+    <p>Conçu et construit par Maxime Larose</p>
+</section>
+    
+
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+
+    <!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+    
+</body>
+</html>
+
+                   
+                               
+                               
+                               

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-blog_seven_bridges_of_konigsberg">
+    <nav>
+        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_sept_ponts_de_konigsberg.html">FR</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">The Seven Bridges of Königsberg</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="teaching">
+    <div class="row-teaching">
+        <div class="teaching-col">
+            <p>It's not every day that a new area of mathematics is created. However sometimes, in math research, one encounters a problem whose solution is beyond the scope of the world's vocabulary, mathematically speaking. Such was the reality for our good friend Leonhard Euler when he was informed of the problem that was the talk of the town in Königsberg. This is the story of the birth of graph theory.</p>
+             <p>The town of Königsberg, structured as shown in the picture below, had a unique geography. It contained seven bridges used to cross the Pregel River. The people of Königsberg often debated on one question related to their beautiful town's configuration, namely "Is it possible to take a walk around town going over every bridge exactly once?" Try it for yourself!</p>
+
+        </div>
+        <div class="blog-konigsberg-img1">
+            <img src="images/7-bridges.jpeg">
+        </div>
+        <div class="about-col">
+            <p>How about we just write a list of all possible trajectories and see if one of them satisfies our conditions? No! For one, solving a problem this way, though it is possible to do so, would not teach us anything new about this flavour of problem. For instance, if we imagine a town called Maxville with a similarly complex geography and 1,729 bridges wherein we wanted to take a walk going over each bridge exactly once, we could not apply what we learned from Königsberg to Maxville because we didn't learn anything! A theoretical solution is required, and Leonhard Euler, a Swiss mathematician, was the first to come up with one.</p>
+            
+            <p>Let's walk through the thought process of a mathematician like Euler. He started with a remark: The shapes of the banks and islands are of no mathematical interest to us. They have no bearing on this problem. We may as well replace these geographical features with single points. Furthermore, as far as the bridges go, all that interests us is what we'll find at their two ends. We can therefore replace the above drawing with the following: </p>
+
+        </div>
+        <div class="blog-konigsberg-img1">
+            <img src="images/bridges.png" style="width: 50%" alt="bridges">
+        </div>
+        <div class="teaching-col">
+            <p>
+                Let's admire the new-found simplicity of this problem. This elimination of unnecessary information is a common strategy in mathematics. This structure is called a <i>graph</i>. It consists of a set of <i>vertices</i> (in this case A, B, C, and D) and <i>edges</i> (in this case a, b, c, d, e, f, and g.) Let's introduce some notation: The <i>degree</i> of a vertex is the number of edges incident to it. For instance, in the above graph, the degree of D is 3 and the degree of A is 5.
+            </p>
+            
+            <p>
+                Let's imagine a walk around Königsberg in which we go over every bridge (edge) exactly once. We can imagine two scenarios: On one hand, if our walk ends where it started, then every vertex will have been entered the same number of time it has been exited. In this case, it's clear that the degree of each vertex has to be even. On the other hand, if our walk has a starting point that differs from the end point, we can make the following observations: When we leave our starting point, we are using a bridge (an edge.) We may re-enter our starting point, but since our end point is different from our starting point, we will have to leave it. It can be observed, therefore, that the degree of the starting point must be odd. By the same reasoning, the degree of the endpoint must be odd as well. As for the other points, we must exit them the same number of times as we have entered them. This implies that their degrees must be even.
+            </p>
+            
+            <p>
+                Let's compile those two pieces of reasoning: For a walk to exist in which we cross each edge exactly once, we need to have either zero or two vertices with odd degree. Great! So we have a solution! Let's apply it to the graph of Königsberg. This graph has not zero, not two, but four vertices of odd degree. This means it's impossible to find a walk that passes through each edge exactly once! Those poor residents of Königsberg will have to revisit bridges.
+            </p>
+            
+            <p>
+                During World War II, two of the bridges were sadly destroyed in a bombing. Two others were removed during the construction of a highway. As of the time of writing, it is in fact possible to take a walk around Königsberg (now Kaliningrad, Russia) going over each bridge exactly once!
+            </p>
+
+        </div>
+    </div>
+    
+        
+</section>
+    
+    
+    
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Designed and built by Maxime Larose</p>
+</section>
+   
+    
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+                          
+                               
+                               
+                               

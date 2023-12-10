@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-blog_straws">
+    <nav>
+        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_pailles.html">FR</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">How Many Holes Are in a Straw?</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="teaching">
+    <div class="row-teaching">
+        <div class="teaching-col">
+            <p>This question has been the subject of debate on social media for years. As you're reading this, you've surely already made up your mind, likely thinking the answer is obvious. However, the question is not as simple as it seems.</p>
+            
+            <p>As with most problems we face in life, we turn to mathematics for an answer! First, we have to agree on what a hole is. I won't bore you with the mathematical details. As long as we can agree that that a CD is a 2D surface with one hole and a donut is a 3D surface with one hole, we'll get along just fine.</p>
+            
+            <p>That being said, let's lay down some ground rules. What if our donut came out of the oven slightly misshapen? Is it still a donut? According to topology, yes! Topologists are not interested in the bumps, the curves, the colour, or the size of a shape. To a topologist, a donut is identical to a coffee cup. Indeed, if we imagine a coffee cup made of clay, we could shape it into a donut shape without cutting it, crossing it with itself, or creating any new holes.</p>
+            
+            <p>So now you and I are topologists. "What does this have to do with straws," you might ask. What if I told you that, just like how a coffee cup is a donut, a straw is a CD? We can take a straw, grab the bottom edge, and stretch it out until we get a disk shape. Physisists prohibit this sort of behaviour, but we are topologists, so it's okay. Now that we've decided that a straw is a CD and that a CD has one hole, it follows that a straw has exactly one hole! Perfect. But let's not sweep the other perspectives under the rug. Why might non-topologists think there are zero, two, or infinitely many holes in a straw?</p>
+            
+            <p>Not everyone is a topologist like you and me. Some decide that a straw has two holes: An entrance and an exit. This is not crazy. After all, it is true that when your liquid of choice (surely Merry Berry Bubly) is sucked through the straw, it passes through two thresholds, namely an entrance and an exit. However, topologically, there is no such thing as the inside or the outside of a straw. Why? As a topologist, you'll surely agree that a CD has no inside or outside. I rest my case.</p>
+            
+            <p>"Max, why would anyone think a straw has infinitely many holes? That's insane!" This perspective is not crazy either. Let's imagine a circle. That is, a two-dimensional loop (think of the letter o.) Let's stack an infinite number of these until we have a straw. Each o shape has a hole, and since the straw is constructed from infinitely many o shapes, the straw must have infinitely many holes, right? Wrong... topologically speaking, that is. This perspective has some merit. However, it insists on its own definition of the word "hole". To agree with this perspective is by no means wrong. However, it's completely incompatible with the definition of "hole" that topologists such as you and I hold.</p>
+            
+            <p>"Max, a straw obviously has no holes!" This is a common answer that floats around social media whenever this question comes up. This school of thought is founded upon the idea that a hole implies damage. In other words, unless you've damaged your straw by puncturing it, there is no hole in your straw. This definition of "hole" agrees with our everyday definition in the context of clothes, for example. Although an undamaged shirt has three holes (this is the topologist's answer,) a real human won't say a shirt has a hole unless it has been damaged.</p>
+            
+            <p>To a topologist, there is no debate. A straw has one hole.</p>
+        </div>
+    </div>
+    
+        
+</section>
+     
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Designed and built by Maxime Larose</p>
+</section>
+    
+
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+      
