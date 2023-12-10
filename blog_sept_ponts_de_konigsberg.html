@@ -34,7 +34,8 @@
 <section class="teaching">
     <div class="row-teaching">
         <div class="teaching-col">
-            <p>Ce n'est pas tous les jours qu'un nouveau domaine des mathématiques est créé. Cependant, il arrive parfois que'en recherche mathématique, on rencontre un problème dont la solution dépasse le cadre du vocabulaire mondial, mathématiquement parlant. C'est ce qui est arrivé à notre ami Leonhard Euler lorsqu'il a été informé du problème qui tracassait les gens de la ville de Königsberg. Voici l'histoire de la naissance de la théorie des graphes.</p>
+            <h1>"Über sieben Brücken mußt du gehn"</h1>
+            <p>Ce n'est pas tous les jours qu'un nouveau domaine des mathématiques est créé. Cependant, il arrive parfois qu'en recherche mathématique, on rencontre un problème dont la solution dépasse le cadre du vocabulaire mondial, mathématiquement parlant. C'est ce qui est arrivé à notre ami Leonhard Euler lorsqu'il a été informé du problème qui tracassait les gens de la ville de Königsberg. Voici l'histoire de la naissance de la théorie des graphes.</p>
              <p>La ville de Königsberg, structurée comme le montre l'image ci-dessous, avait une géographie unique. Elle contenait sept ponts permettant de traverser la rivière Pregel. Les habitants de Königsberg débattaient souvent d'une question liée à la configuration de leur belle ville: "Est-il possible de faire le tour de la ville en passant exactement une fois sur chaque pont ?" Essayez-le vous-mêmes!</p>
 
         </div>
@@ -42,7 +43,7 @@
             <img src="images/7-bridges.jpeg">
         </div>
         <div class="teaching-col">
-            <p>Pourquoi pas écrire une liste de toutes les trajectoires possibles et voir si l'une d'entre elles satisfait à nos conditions? Non! Premièrement, résoudre un problème de cette manière, bien que cela soit possible, ne nous apprendrait rien de nouveau sur ce type de problème. Par exemple, si on imagine une ville appelée Maxville avec une géographie tout aussi complexe et 1,729 ponts et qu'on veut faire une marche en passant sur chaque pont exactement une fois, on ne pourra pas appliquer ce qu'on a appris de Königsberg à Maxville parce qu'on aurra rien appris! Ça nous prend une solution théorique, et c'est Leonhard Euler, un mathématicien suisse, qui a été le premier à en trouver une.</p>
+            <p>Pourquoi pas écrire une liste de toutes les trajectoires possibles et voir si l'une d'entre elles satisfait à nos conditions? Non! Premièrement, résoudre un problème de cette manière, bien que cela soit possible, ne nous apprendrait rien de nouveau sur ce type de problème. Par exemple, si on imagine une ville appelée Maxville avec une géographie tout aussi complexe et 1 729 ponts et qu'on veut prendre une marche en passant sur chaque pont exactement une fois, on ne pourra pas appliquer ce qu'on a appris de Königsberg à Maxville parce qu'on aurra rien appris! Ça nous prend une solution théorique, et c'est Leonhard Euler, un mathématicien suisse, qui a été le premier à en trouver une.</p>
             
             <p>Voyons le processus de réflexion d'un mathématicien comme Euler. Il a commencé par une remarque: Les formes des rives et des îles ne présentent aucun intérêt mathématique pour nous. On pourrait tout aussi bien remplacer ces caractéristiques géographiques par des points. De plus, en ce qui concerne les ponts, tout ce qui nous intéresse est ce que nous trouverons à leurs deux extrémités. On peut donc remplacer le dessin ci-dessus par le suivant: </p>
 
@@ -52,7 +53,7 @@
         </div>
         <div class="teaching-col">
             <p>
-                Admirons la nouvelle simplicité de ce problème. Cette élimination d'information inutile est une stratégie courante en mathématiques. Cette structure s'appelle un <i>graphe</i>. Elle se compose d'un ensemble de <i>sommets</i> (dans notre cas A, B, C et D) et d'<i>arêtes</i> (dans notre cas a, b, c, d, e, f et g.) Introduisons quelques notations: Le <i>degré</i> d'un sommet est le nombre d'arêtes qui lui sont incidents. Par exemple, dans le graphique ci-dessus, le degré de D est 3 et le degré de A est 5.
+                Admirons la nouvelle simplicité de ce problème. Cette élimination d'information inutile est une stratégie courante en mathématiques. Cette structure s'appelle un <i>graphe</i>. Elle se compose d'un ensemble de <i>sommets</i> (dans notre cas A, B, C et D) et d'<i>arêtes</i> (dans notre cas a, b, c, d, e, f et g.) Introduisons quelques notations: Le <i>degré</i> d'un sommet est le nombre d'arêtes qui lui sont incidents. Par exemple, dans le graphe ci-dessus, le degré de D est 3 et le degré de A est 5.
             </p>
             
             <p>
@@ -60,7 +61,7 @@
             </p>
             
             <p>
-                Combinons ces deux raisonnements: Pour qu'il existe une marche dans laquelle nous traversons chaque arête exactement une fois, nous devons avoir soit zéro, soit deux sommets de degré impair. Parfait! On a une solution! Appliquons-la au graphe de Königsberg. Ce graphe n'a ni zéro, ni deux, mais quatre sommets de degré impair. Cela signifie qu'il est impossible de trouver une marche qui passe par chaque arête exactement une fois ! Les pauvres habitants de Königsberg vont devoir revisiter des ponts.
+                Combinons ces deux raisonnements: Pour qu'il existe une marche dans laquelle nous traversons chaque arête exactement une fois, nous devons avoir soit zéro, soit deux sommets de degré impair. Parfait! On a une solution! Appliquons-la au graphe de Königsberg. Ce graphe n'a ni zéro, ni deux, mais quatre sommets de degré impair. Cela signifie qu'il est impossible de trouver une marche qui passe par chaque arête exactement une fois! Les pauvres habitants de Königsberg vont devoir revisiter des ponts.
             </p>
             
             <p>
