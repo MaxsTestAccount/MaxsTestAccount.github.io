@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8LHL1RQ4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GQWWBK14L4');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-blog_seven_bridges_of_konigsberg img_presents">
+    <nav>
+        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="accueil.html"><i class="fa-solid fa-house"></i>&nbsp; ACCUEIL</a></li>
+                <li><a href="about-fr.html"><i class="fa-solid fa-address-card"></i>&nbsp; À PROPOS DE MOI</a></li>
+                <li><a href="contact-fr.html"><i class="fa-solid fa-envelope"></i>&nbsp; ME CONTACTER</a></li>
+                <li><a href="blog-fr.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_12_days_of_christmas.html">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">L'infinité des jours de Noël</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="teaching">
+    <div class="row-teaching">
+        <div class="teaching-col">
+            <h1>Si, après les "Douze jours de Noël", les cadeaux continuaient, aurait-on -1/12 cadeaux ?</h1>
+            <p>La plupart d'entre nous connaissent une version de la chanson, mais pour ceux qui ne la connaissent pas, je la résume ici dans le style d'un mathématicien: "Le <i><span class="mathmode">1</span></i>er jour de Noël j'ai reçu de mon ami un tambour qui fait ra pa pam pam. Ensuite, pour <i><span class="mathmode">2 ≤ n ≤ 12</span></i>: le <i><span class="mathmode">n</span></i>ième jour de Noël j'ai reçu de mon ami les mêmes choses qu'hier, plus <i><span class="mathmode">n</span></i> de <i>quelque chose</i>." Il y a plusieurs versions de cette chanson en français.</p>
+        </div>
+        <div class="blog-konigsberg-img1">
+            <img src="images/partridge.jpg">
+        </div>
+    
+        <div class="teaching-col">
+            <p>Donc le douzième jour de Noël, combien de cadeaux avons-nous reçu? J'espère que vous êtes d'accord que ça donne <i><span class="mathmode">1 + 2 + ... + 11 + 12</span></i>. Si tu es physicien, tu as probablement déjà sorti ta calculatrice, mais si tu es mathématicien, tu penses sans doute qu'il existe une meilleure solution. Tu as raison!</p>
+            
+            <p>À l'école primaire, Karl Friedrich Gauss et ses camarades de classe ont été demandés par leur professeur à additionner tous les entiers de <i><span class="mathmode">1</span></i> à <i><span class="mathmode">100</span></i>. Le professeur, qui pensait sûrement avoir gagné quelques heures, fut surpris de voir que Gauss avait presque immédiatement trouvé la réponse: <i><span class="mathmode">5050</span></i>! Comment a-t-il fait ? Le chiffre que l'on cherche est le suivant <i><span class="mathmode">1 + 2 + ... + 99 + 100</span></i>. Appelons-le <i><span class="mathmode">S</span></i> pour "somme". Faisons un peu de gymnastique mathématique. <i><span class="mathmode">S</span></i> pourrait sembler ennuyeux à calculer, donc calculons plutôt<i><span class="mathmode">2S</span></i>. <i><span class="mathmode">2S</span></i> est simplement <i><span class="mathmode">(100&nbsp;+&nbsp;99&nbsp;+&nbsp;...&nbsp;+&nbsp;2&nbsp;+&nbsp;1) + (1&nbsp;+&nbsp;2&nbsp;+&nbsp;...&nbsp;+&nbsp;99&nbsp;+&nbsp;100)</span></i> On peut réarranger cela comme suit: <i><span class="mathmode">(1&nbsp;+&nbsp;100) + (2&nbsp;+&nbsp;99) + ... + (99&nbsp;+&nbsp;2) + (100&nbsp;+&nbsp;1)</span></i>. Prenez un moment pour vous convaincre que cela est égal à <i><span class="mathmode">50×101</span></i>, qui à son tour est égal à <i><span class="mathmode">5050</span></i>!</p>
+
+            <p>Un jour, au cours de mes études, une professeure m'a donné un conseil précieux: "Soit sage, généralise" (Il faut imaginer que ça rime, puisque c'est le cas en anglais). Après tout, sans généraliser, comment peut-on appliquer ce qu'on vient d'apprendre à notre problème festif? Alors prenons ce que l'on a appris et faisons-en un théorème. Au lieu de prendre la somme des entiers entre <i><span class="mathmode">1</span></i> et <i><span class="mathmode">100</span></i>, prenons plutôt la somme de <i><span class="mathmode">1</span></i> à <i><span class="mathmode">n</span></i>. Remplaçons <i><span class="mathmode">100</span></i> par <i><span class="mathmode">n</span></i> dans notre équation pour obtenir <i><span class="mathmode">1&nbsp;+&nbsp;2&nbsp;+&nbsp;...&nbsp;+&nbsp;n = (n/2)(n&nbsp;+&nbsp;1)</span></i>.</p>
+            
+            <p>Finalement, on peut calculer le nombre de cadeaux que l'on a reçus le douzième jour de Noël. En utilisant la formule <i><span class="mathmode">1&nbsp;+&nbsp;2&nbsp;+&nbsp;...&nbsp;+&nbsp;n = (n/2)(n&nbsp;+&nbsp;1)</span></i> et en y remplaçant <i><span class="mathmode">n</span></i> par <i><span class="mathmode">12</span></i>, on obtient un total de <i><span class="mathmode">(12/2)(12&nbsp;+&nbsp;1) = 78</span></i>. Et voilà! Le douzième jour de Noël j'ai reçu de mon ami <i><span class="mathmode">(12/2)(12&nbsp;+&nbsp;1) = 78</span></i> cadeaux.</p>
+            
+            <p>Je pourrais terminer ce texte ici, mais cela ne mettrait pas en évidence l'absurdité de l'affirmation suivante: <i><span class="mathmode">1 + 2 + 3 + ... = -1/12</span></i>. C'est ce qu'affirment des sources telles que la populaire chaîne YouTube <a href="https://www.youtube.com/@numberphile">Numberphile</a>. Mais je sais ce que tu penses : "Max, c'est ridicule. Il est évident que la somme devrait être infinie. Comment une somme de nombres positifs pourrait-elle être négative? Comment une somme de nombres entiers pourrait-elle être non entière ?" Vos inquiétudes sont valables. En fait, je suis d'accord avec vous. Détruisons ensemble leur raisonnement.</p>
+            
+            <p>Le raisonnement commence avec l'affirmation que <i><span class="mathmode">1 - 1 + 1 - 1 + 1 - ... = ½</span></i>. Si ton instinct te dit que c'est faux, tu as raison! Mais accordons-leur le bénéfice du doute et examinons leur preuve. Essaye de trouver l'erreur. Appelons cette somme <i><span class="mathmode">X</span></i>. Maintenant calculons <i><span class="mathmode">1 - X</span></i>. Il en suit que</p>
+            
+            <p style="text-align: center"><i><span class="mathmode">1 - X = 1 - (1 + 1 - 1 + 1 - ...)</span></i></p>
+            
+            <p>Il est maintenant clair que</p>
+            
+            <p style="text-align: center"><i><span class="mathmode">1 - X = X</span></i></p>
+            <p>Par conséquent <i><span class="mathmode">X = ½</span></i>. As-tu trouvé l'erreur? La voici: On a traité <i><span class="mathmode">1 - 1 + 1 - 1 + 1 - ...</span></i> comme un nombre réel! On l'a appelé <i><span class="mathmode">X</span></i> et on a pris pour acquis que l'on pouvait y appliquer des opérations d'arithmétique. On ne peut pas. Une somme avec une infinité de termes est appelée une <i>série</i>. En gros, une série est dite <i>convergente</i> si son total est un nombre réel. Par exemple, la série <i><span class="mathmode">½ + ¼ + ⅛ + ...</span></i> converge vers 1. Intuitivement, on peut penser à cette somme comme une dans laquelle la somme se raproche de plus en plus vers <i><span class="mathmode">1</span></i> en ajoutant plus de termes. Quand une série d'est pas convergente, elle est dite <i>divergente</i>. C'est le cas pour <i><span class="mathmode">1 - 1 + 1 - 1 + 1 - ...</span></i>, comme peu importe le nombre de termes que l'on y ajoute, le total alterne simplement entre <i><span class="mathmode">0</span></i> et <i><span class="mathmode">1</span></i>. C'est-à-dire, elle n'approche jamais un nombre réel. Puisque la somme n'est pas n nombre réel, on ne peut pas prendre pour acquis que l'on peut y appliquer les opérations arithmétiques telles que l'addition et la multiplication. Dans <a href="https://www.youtube.com/watch?v=w-I6XTVZXww">la vidéo de Numberphile</a>, ils commettent le même crime mathématique avec la série <i><span class="mathmode">1 - 2 + 3 - 4 + ...</span></i>.</p>
+            
+            <p><i><span class="mathmode">1 + 2 + 3 + 4 + ...</span></i>, comme tu l'as peut-être remarqué, ne s'approche pas d'une valeur numérique réelle. Elle continue de croître et de croître. Elle est en fait divergente.</p>
+            
+            <p>Maintenant tu es prêt pour le temps des fêtes. En cas de silence malaisant pendant le souper de Noël avec ta famille, tu auras de quoi parler.</p>
+
+        </div>
+    </div>
+</section>
+    
+    
+    
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Conçu et construit par Maxime Larose</p>
+</section>
+   
+    
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+                          
+                               
+                               
+                               

@@ -1073,7 +1073,10 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     align-items: center;
 }
 
-
+.teaching-col h1{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 
 /*-------------------------------------------------------Blog-------------------------------------------------------*/
@@ -1215,13 +1218,18 @@ img {
 .card__image--straws {
   background-image: url(images/straw.jpg);
 }
+.card__image--presents {
+  background-image: url(images/christmas_presents.jpg);
+}
 
 .card__title {
-  color: @gray-dark;
-  font-size: 25px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    color: @gray-dark;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px
 }
 
 .card__text {
@@ -1365,6 +1373,9 @@ img {
     font-size: 24px;
 }
 
+.img_presents{
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/christmas_presents.jpg);
+}
 
 
 /*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/
